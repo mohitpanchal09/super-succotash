@@ -440,7 +440,7 @@ border-radius: 23px;
   }
  
   .bottom-footer{
-    margin-top: -160% !important;
+    margin-top: -160% ;
     /* width: 201%; */
   }
   .outer-box{
@@ -622,11 +622,54 @@ border-radius: 23px;
     margin-left: 37rem;
   }
 
+  #my_email{
+    /* font-size: 10px; */
+    width: 5% !important; 
+  }
 
 
 
 
 
+
+
+
+  @media only screen and (max-width:360px){
+    .side-ques h2{
+      margin-left: -25vh;
+      margin-top: 20%;line-height: 10px;
+      
+  }
+  .bottom-footer{
+    margin-left: -14vh;
+    margin-top: -170% !important;
+    
+  }
+  .email-input{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .mail-box{
+    width: 80% !important;
+    /* display: none; */
+    
+  }
+  .send-button{
+    margin-left:0.5rem!important;
+    /* padding: 1\0px; */
+  }
+  .email-input{
+    
+    width: 170%;
+    margin-left: -1%;
+  }
+  .send-button{
+    width: 10px !important;
+    margin-left: -3% !important;
+  }
+   
+  }
 
 
   
