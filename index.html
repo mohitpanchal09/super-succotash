@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    
+    <title>Our Gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+    <!-- <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'> -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="https://cdn.discordapp.com/attachments/891025496601661504/963850151984767036/unknown.png" class="nav-logo">
+        <nav>
+          <ul id="menulist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our_kitchen.html">Our Kitchen</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <img class="menu-icon" onclick="togglemenu()"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAG9JREFUSEvtlckNwCAQA01nlEY6g8qC9rEfjigPKyBiF+CRRoYNWJSwiAuBPzMv1a46AbiJ3q+2a6aaCTVmx9kOTLQ8rtKq3Uskr7po1bNxmWpm8lvVTOiwS8/Jtfzvr7azyEzXp3Ex9T52SfX5qisn1AwfJnWg+AAAAABJRU5ErkJggg=="/>
+      </div>
+    </div>
+    
+    <div class="header">
+        <h1 class="gallery-header">Our Gallery</h1>
+    </div>
+
+  <div class="gallery_box">
+    <div class="roow">
+
+        <div class="coolumn">
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716576583790753/photo_2022-04-14_11-25-14.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716576583790753/photo_2022-04-14_11-25-14.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716577481384017/photo_2022-04-14_11-25-17.jpg" style="width:100%" alt="">
+            </div>
+        </div>
+
+        <div class="coolumn">
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716576583790753/photo_2022-04-14_11-25-14.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716577481384017/photo_2022-04-14_11-25-17.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716577481384017/photo_2022-04-14_11-25-17.jpg" style="width:100%" alt="">
+            </div>
+        </div>
+
+        <div class="coolumn">
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716577481384017/photo_2022-04-14_11-25-17.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716576931905576/photo_2022-04-14_11-25-15.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716576931905576/photo_2022-04-14_11-25-15.jpg" style="width:100%" alt="">
+            </div>
+        </div>
+        <div class="coolumn">
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716576583790753/photo_2022-04-14_11-25-14.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716576583790753/photo_2022-04-14_11-25-14.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716577481384017/photo_2022-04-14_11-25-17.jpg" style="width:100%" alt="">
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- ##########################java script for navbar############ -->
+    <script>
+        var menulist = document.getElementById("menulist");
+        menulist.style.maxHeight = "0px";
+        function togglemenu(){
+          if(menulist.style.maxHeight == "0px")
+          {
+            menulist.style.maxHeight = "190px";
+          }
+          else{
+            menulist.style.maxHeight = "0px";
+          }
+        }
+      </script>
+      <!-- ################## Footer ####################### -->
+      <footer>
+
+        <div class="container4">
+         
+         <div class="footer-sections">
+          <!-- <img src="https://cdn.discordapp.com/attachments/891025496601661504/969953751064539146/unknown.png" id="btm-footer-img" class="bottom-footer-new" alt=""> -->
+          <div class="sec-homians">
+            <h2>Homians</h2>
+              <ul class="homians-list">
+                <li class="list"><a href="" class="hyperlink">About Us</a></li>
+                <!-- <li class="list"><a href="" class="hyperlink">contact </a></li> -->
+                <li class="list"><a href="" class="hyperlink">Privacy Policy</a></li>
+                <li class="list"><a href="" class="hyperlink">Terms & Condition</a></li>
+              </ul>
+          </div>
+        
+          <div class="sec-contact-us">
+            <h2>Contact</h2>
+              <ul class="contact-us-list">
+                <li class="list"><i class='bx bxs-map'></i><a href="" class="hyperlink">Parichowk, Gr.Noida,201310</a></li>
+                <li class="list"><i class='bx bxs-phone'></i><a href="" class="hyperlink">+91-8287799188,+91-8882003295</a></li>
+                <div class="devesh"> 
+                <li class="list"><i class='bx bxs-envelope'></i><a href="" class="hyperlink">customercare@homians.com</a></li>
+                </div>
+              </ul>
+          </div>
+          <div class="sec-timings">
+              <h2>Timing</h2>
+              <ul >
+                
+                <li class="list"><a href="" class="hyperlink"></a>Breakfast</li>
+                <ul>
+                  <li class="listtime"><a href="" class="hyperlink">8:00am - 9:30am</a></li>
+                </ul>
+    
+                <li class="list"><a href="" class="hyperlink">Lunch</a></li>
+                <ul>
+                  <li class="listtime"><a href="" class="hyperlink">12:00pm - 1:30pm</a></li>
+                </ul>
+                <li class="list"><a href="" class="hyperlink">Dinner</a></li>
+                <ul>
+                  <li class="listtime"><a href="" class="hyperlink">7:30pm - 9:00pm</a></li>
+                </ul>
+              </ul>
+           </div>
+
+           <div class="side-ques">
+             <h2 class="side-ques-text">Have questions in mind?</h2>
+             <h2 class="side-ques-text">Let us help you!</h2>
+             <div class="mail-box">
+               <div class="outer-box">
+                 <div class="email-input">
+                   <input type="email" class="footer-mail" placeholder="yourmail@gmail.com"><button class="send-button" type="submit">SEND</button>
+    
+                     <img src="https://cdn.discordapp.com/attachments/891025496601661504/969953751064539146/unknown.png" id="btm-footer-img" class="bottom-footer" alt="">
+    
+                 </div>
+               </div>
+             </div>
+            </div>
+            <div class="footer-logo">
+           </div>
+    
+         </div>
+          
+           </div>
+         
+          <div class="inner-image">
+            <img src="https://cdn.discordapp.com/attachments/891025496601661504/969947238530949130/unknown.png" alt="" class="image-down">
+            <div class="trademark"><h10 class="trademark-text">2022 &#169; All Rights Reserved By @HOMIANS</h10>
+            </div>
+            
+          </div>
+          <img src="https://cdn.discordapp.com/attachments/891025496601661504/969946972574330950/unknown.png" class="footer-green-img" alt="">
+          
+        </div>
+        
+        
+    
+            
+      </footer> 
+      
+  
+</body>
+</html>
