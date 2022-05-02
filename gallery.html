@@ -1,508 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-*{
-    box-sizing: border-box;
-}
-.container1{
-    width: 100%;
-    min-height: 40vh;
-    padding-left: 2%;
-    padding-right: 8%;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-  .navbar{
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-  .nav-logo{
-    /* position: absolute; */
-    left: 0.7%;
-    right: 88.67%;
-    top: 0%;
-    margin-left: 2%;
-    bottom: 6.68%;
-  }
-  .menu-icon{
-    width: 25px;
-    cursor: pointer;
-    display: none;
-  }
-  nav{
-    flex: 1;
-    text-align: right;
-  }
-  nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 30px;
-  }
-  nav ul li a{
-    text-decoration: none;
-    color:rgba(120, 169, 45, 0.64);
-    font-family: 'Poppins';
-    font-style: normal;
-    font-size: 18px;
-    line-height: 24px;
-  }
-  nav ul li a:hover{
-    color:#333;
-  }
+<!DOCTYPE html>
+<html lang="en">
 
-body{
-    margin: 0;
-}
-.header{
-    text-align: center;
-    padding: 32px;
-}
-.header h1{
-    font-family: "Pacifico";
-    /* font-style: "Pacifico"; */
-    font-size: 50px;
-    color: #78A92D;
-    font-weight: 400;
-    font-size: 64px;
-    letter-spacing: 0.08em;
-    text-align: center; 
-    /* height: 98px; */
-    margin-left: 0%;
-    top: 75px;
-}
-.gallery-header{
-  font-family: 'Pacifico',cursive;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 42px !important;
-  line-height: 128%;
-  /* or 101px */
-  text-align: center;
-  letter-spacing: 0.08em;
-  color: #78A92D;
-  justify-content: center;
-  text-align: center;
-  width: 98%;
-}
-
-.gallery_box{
-  height: auto;
-  margin-bottom: 50px;
-  width: auto;
-  padding-top: 50px;
-  margin-left: 30px;
-  margin-right: 30px;
-  /* display: block; */
-background: #FFFFFF;
-box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.25);
-border-radius: 23px;
-}
-.roow{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px 30px 30px 30px;
-}
-.coolumn{
-    flex: 25%;
-    max-width: 25%;
-}
-.img-hover-zoom{
-    height: auto;
-    overflow: hidden;
-    border: 5px solid #ffff;
-}
-.img-hover-zoom img{
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition:  transform .5s ease;
-}
-.img-hover-zoom:hover img{
-    transform: scale(1.5);
-}
-
-
-
-
-
-/* ##################### media query##########+++++++++++++++++++++ */
-
-
-
-
-@media screen and (max-width: 800px) {
-    .coolumn{
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .coolumn{
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-@media only screen and (max-width:700px){
-
-    nav ul{
-      width: 100%;
-      background: linear-gradient(#fcfffa,#c2f577);
-      position:absolute;
-      top: 75px;
-      right: 0;
-      z-index: 2;
-    }
-    nav ul li{
-      display:block;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    nav ul li a{
-      color:#333;
-    }
-    .menu-icon{
-    display: block;
-    }
-    #menulist{
-      overflow: hidden;
-      transition: 0.5s;
-    }
-  }
-
-
-/*################# MEIDA QUERY FOR FOOTER############## */
-
-
- 
-  
-  /* @media (min-width 1400){
-    .heading_gallery{
-      top: -20%;
-      margin-top: -80%;
-    }
-    .head{
-      margin-top: -400%;
-    }
-  } */
-  
-  
-  
-  @media only screen and (max-width:413px){
-  
-    nav ul{
-      width: 100%;
-      background: linear-gradient(#fcfffa,#c2f577);
-      position:absolute;
-      top: 75px;
-      right: 0;
-      z-index: 2;
-    }
-    nav ul li{
-      display:block;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    nav ul li a{
-      color:#333;
-    }
-    .menu-icon{
-      margin-right: 1rem;
-    display: block;
-    }
-    #menulist{
-      overflow: hidden;
-      transition: 0.5s;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Our Gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     
-  }
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
 
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="https://cdn.discordapp.com/attachments/891025496601661504/963850151984767036/unknown.png" class="nav-logo">
+        <nav>
+          <ul id="menulist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our_kitchen.html">Our Kitchen</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <img class="menu-icon" onclick="togglemenu()"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAG9JREFUSEvtlckNwCAQA01nlEY6g8qC9rEfjigPKyBiF+CRRoYNWJSwiAuBPzMv1a46AbiJ3q+2a6aaCTVmx9kOTLQ8rtKq3Uskr7po1bNxmWpm8lvVTOiwS8/Jtfzvr7azyEzXp3Ex9T52SfX5qisn1AwfJnWg+AAAAABJRU5ErkJggg=="/>
+      </div>
+    </div>
+    
+    <div class="header">
+        <h1 class="gallery-header">Our Gallery</h1>
+    </div>
+
+  <div class="gallery_box">
+    <div class="roow">
+
+        <div class="coolumn">
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716576583790753/photo_2022-04-14_11-25-14.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716576583790753/photo_2022-04-14_11-25-14.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716577481384017/photo_2022-04-14_11-25-17.jpg" style="width:100%" alt="">
+            </div>
+        </div>
+
+        <div class="coolumn">
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716576583790753/photo_2022-04-14_11-25-14.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716577481384017/photo_2022-04-14_11-25-17.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716577481384017/photo_2022-04-14_11-25-17.jpg" style="width:100%" alt="">
+            </div>
+        </div>
+
+        <div class="coolumn">
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716577481384017/photo_2022-04-14_11-25-17.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716576931905576/photo_2022-04-14_11-25-15.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716576931905576/photo_2022-04-14_11-25-15.jpg" style="width:100%" alt="">
+            </div>
+        </div>
+        <div class="coolumn">
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716576583790753/photo_2022-04-14_11-25-14.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716576583790753/photo_2022-04-14_11-25-14.jpg" style="width:100%" alt="">
+            </div>
+            <div class="img-hover-zoom">
+                <img src="https://cdn.discordapp.com/attachments/891025496601661504/966716577481384017/photo_2022-04-14_11-25-17.jpg" style="width:100%" alt="">
+            </div>
+        </div>
+      </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins" , sans-serif;
-  }
-  body{
-    min-height: 100vh;
-    width: 100%;
-    background: #EEECEB;
-  }
-  footer{
-   margin-top: 20%;
-    /* position: fixed; */
-    /* position: absolute; */
-    background: rgba(120, 169, 45, 0.64);
-    width: 100%;
-    bottom: 0;
-    /* left: 10%; */
-  }
-  /* footer::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 100px;
-    height: 1px;
-    width: 100%;
-    background: #AFAFB6;
-  } */
-  footer .content{
-    max-width: 1250px;
-    margin: auto;
-    padding: 30px 40px 40px 40px;
-  }
-  footer .content .top{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
-  }
-  .content .top .logo-details{
-    color: black;
-    font-size: 30px;
-  }
-  .content .top .media-icons{
-    display: flex;
-  }
-  .content .top .media-icons a{
-    height: 40px;
-    width: 40px;
-    margin: 0 8px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    color: #fff;
-    font-size: 17px;
-    text-decoration: none;
-    transition: all 0.4s ease;
-  }
-  
-  footer .content .link-boxes{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  footer .content .link-boxes .box{
-    width: calc(100% / 5 - 10px);
-  }
-  .content .link-boxes .box .link_name{
-    color: black;
-    font-size: 20px;
-    font-weight: 400;
-    font-family: pacifico;
-    margin-bottom: 10px;
-    position: relative;
-  }
-  .link-boxes .box .link_name::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    height: 2px;
-    width: 35px;
-    background: black;
-  }
-  .content .link-boxes .box li{
-    margin: 6px 0;
-    list-style: none;
-  }
-  .content .link-boxes .box li a{
-    color: black;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    opacity: 0.8;
-    transition: all 0.4s ease
-  }
-  .content .link-boxes .box li a:hover{
-    opacity: 1;
-    text-decoration: underline;
-  }
-  .content .link-boxes .input-box{
-    margin-right: 55px;
-  }
-  .link-boxes .input-box input{
-    height: 40px;
-    width: calc(100% + 55px);
-    outline: none;
-    border: 2px solid #AFAFB6;
-    background: white;
-    border-radius: 4px;
-    padding: 0 15px;
-    font-size: 15px;
-    color: black;
-    margin-top: 5px;
-  }
-  .link-boxes .input-box input::placeholder{
-    color: #AFAFB6;
-    font-size: 16px;
-  }
-  .link-boxes .input-box input[type="button"]{
-    background: #fff;
-    color: #140B5C;
-    border: none;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 4px 0;
-    opacity: 0.8;
-    cursor: pointer;
-    transition: all 0.4s ease;
-  }
-  .input-box input[type="button"]:hover{
-    opacity: 1;
-  }
-  footer .bottom-details{
-    width: 100%;
-    background: rgba(120, 169, 45, 0.04);
-    /* background-color: white; */
-  }
-  footer .bottom-details .bottom_text{
-    max-width: 1250px;
-    margin: auto;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .bottom-details .bottom_text span,
-  .bottom-details .bottom_text a{
-    font-size: 14px;
-    font-weight: 300;
-    color: black;
-    opacity: 0.8;
-    text-decoration: none;
-  }
-  .bottom-details .bottom_text a:hover{
-    opacity: 1;
-    text-decoration: underline;
-  }
-  .bottom-details .bottom_text a{
-    margin-right: 10px;
-  }
-  @media (max-width: 900px) {
-    footer .content .link-boxes{
-      flex-wrap: wrap;
-    }
-    footer .content .link-boxes .input-box{
-      width: 40%;
-      margin-top: 10px;
-    }
-  }
-  @media (max-width: 700px){
-    footer{
-      position: relative;
-    }
-    .content .top .logo-details{
-      font-size: 26px;
-    }
-    .content .top .media-icons a{
-      height: 35px;
-      width: 35px;
-      font-size: 14px;
-      line-height: 35px;
-    }
-    footer .content .link-boxes .box{
-      width: calc(100% / 3 - 10px);
-    }
-    footer .content .link-boxes .input-box{
-      width: 60%;
-    }
-    .bottom-details .bottom_text span,
-    .bottom-details .bottom_text a{
-      font-size: 12px;
-    }
-  }
-  @media (max-width: 520px){
-    footer::before{
-      top: 145px;
-    }
-    footer .content .top{
-      flex-direction: column;
-    }
-    .content .top .media-icons{
-      margin-top: 16px;
-    }
-    footer .content .link-boxes .box{
-      width: calc(100% / 2 - 10px);
-    }
-    footer .content .link-boxes .input-box{
-      width: 100%;
-    }
-    .new_footer_logo{
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-    .new_devesh_logo{
-        display: none;
-    }
-    .policy_terms{
-      display: flex;
-      margin-right: -2.5rem !important;
+    </div>
+    <!-- ##########################java script for navbar############ -->
+    <script>
+        var menulist = document.getElementById("menulist");
+        menulist.style.maxHeight = "0px";
+        function togglemenu(){
+          if(menulist.style.maxHeight == "0px")
+          {
+            menulist.style.maxHeight = "190px";
+          }
+          else{
+            menulist.style.maxHeight = "0px";
+          }
+        }
+      </script>
+      <!-- ################## Footer ####################### -->
+      <img class="new_devesh_logo" src="https://cdn.discordapp.com/attachments/891025496601661504/969947238530949130/unknown.png"/>
+      <footer>
+        <div class="content">
+          <div class="top">
+            <div class="logo-details">
+              
+            
+              <span class="logo_name"><img class="new_footer_logo"src="https://cdn.discordapp.com/attachments/891025496601661504/969953751064539146/unknown.png"/></span>
+            </div>
+           
+          </div>
+          <div class="link-boxes">
+            <ul class="box">
+              <li class="link_name">Homians</li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Contact Us</li>
+              <li><a href="#"><i class="fa fa-map-marker"></i>Pari Chowk, Greater Noida</a></li>
+              <li><a href="#"><i class="fa fa-phone"></i>+91-8287799188,</a></li>
+              <li><a href="#">+91-8882003295</a></li>
+              <li><a href="#"><i class="fa fa-envelope"></i>customercare@homians<br>.com</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Timings</li>
+              <li><a href="#">> Breakfast
+                8:00 AM - 9:30 PM</a></li>
+              <li><a href="#">> Lunch
+                12:00 PM - 1:30 PM</a></li>
+              <li><a href="#">> DINNER
+                7:30 PM - 9:00 PM
+                </a></li>
+       
+            </ul>
+           
+            <ul class="box input-box">
+              <li class="link_name">Have questions in mind?
+                Let us help you!</li>
+              <li><input type="text" placeholder="Enter your email"></li>
+              <li><input type="button" value="Send"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text">2022 ©️All Rights Reserved By @HOMIANS</span>
+            <span class="policy_terms">
+              <a href="#">Privacy policy</a>
+              <a class="terms" href="#">Terms & condition</a>
+            </span>
+          </div>
+        </div>
+      </footer>
       
-    }
-    .copyright_text{
-      margin-left: -2rem !important;
-    }
-    
-  }
   
-
-.new_footer_logo{
-    width: 40%;
-}
-.new_devesh_logo{
-    width: 50vw;
-    position: absolute;
-    margin-left: 25%;
-    margin-top: 4%;
-}
-.copyright_text{
-    margin-left: 40%;
-}
+</body>
+</html>
