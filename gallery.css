@@ -74,7 +74,7 @@ body{
   font-family: 'Pacifico',cursive;
   font-style: normal;
   font-weight: 400;
-  font-size: 64px;
+  font-size: 42px !important;
   line-height: 128%;
   /* or 101px */
   text-align: center;
@@ -82,6 +82,7 @@ body{
   color: #78A92D;
   justify-content: center;
   text-align: center;
+  width: 98%;
 }
 
 .gallery_box{
@@ -283,7 +284,7 @@ border-radius: 23px;
     bottom: 0;
     /* left: 10%; */
   }
-  footer::before{
+  /* footer::before{
     content: '';
     position: absolute;
     left: 0;
@@ -291,7 +292,7 @@ border-radius: 23px;
     height: 1px;
     width: 100%;
     background: #AFAFB6;
-  }
+  } */
   footer .content{
     max-width: 1250px;
     margin: auto;
@@ -376,7 +377,7 @@ border-radius: 23px;
     border-radius: 4px;
     padding: 0 15px;
     font-size: 15px;
-    color: #fff;
+    color: black;
     margin-top: 5px;
   }
   .link-boxes .input-box input::placeholder{
